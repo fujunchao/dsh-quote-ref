@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+
+# local installs / scratch
+.verify/
+.verify2/
+*.bak
+*.bak-*
+
+# editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

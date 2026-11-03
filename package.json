@@ -1,0 +1,60 @@
+{
+  "name": "dsh-quote-ref",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "DeepSeekRuntime (DSH) plugin: quote selected conversation text into the composer as a compact reference chip, expanding to the full text on send.",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "deepseek-runtime",
+    "plugin",
+    "quote",
+    "reference",
+    "composer",
+    "client-plugin"
+  ],
+  "homepage": "https://github.com/fujunchao/dsh-quote-ref#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fujunchao/dsh-quote-ref.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fujunchao/dsh-quote-ref/issues"
+  },
+  "author": "Fu Junchao",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-input-trigger"
+      ]
+    }
+  }
+}
