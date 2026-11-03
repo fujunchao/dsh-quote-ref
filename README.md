@@ -45,6 +45,13 @@ and the model still receives the exact passage together with its origin (turn + 
 
 ## Install
 
+### 0. Prebuilt archive
+
+Every release also ships `dsh-quote-ref-<version>.zip` and `.tar.gz` (plus `SHA256SUMS.txt`) built by
+the [Release package](.github/workflows/release.yml) workflow: extract the archive into
+`%USERPROFILE%\.dsh\plugins\` so that `dsh-quote-ref\lib\client.js` ends up in place, then run
+`scripts\install.ps1` from there (or add the `insert` row yourself).
+
 ### 1. One command (recommended)
 
 ```powershell
